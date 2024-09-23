@@ -76,8 +76,9 @@ kubectl rollout history deployment server-deployment
 
 #solution 4
 
+helm repo add bitnami https://charts.bitnami.com/bitnami
 
-helm install bitnami/wordpress –release1
+helm install release1 bitnami/wordpress 
 
 helm list
 
